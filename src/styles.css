@@ -1,3 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 /* Imports a Material Design theme. Can swap for others. */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* No white space in margins on app. Better for small screens, like mobile. */
+body {
+  margin: 0;
+}
