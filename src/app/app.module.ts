@@ -9,6 +9,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
+import { DataService } from './data/data.service';
+import { AuthService } from './auth.service';
+
 const appRoutes: Routes = [
   {path: '', component: WelcomeComponent},
   {path: 'dashboard', component: DashboardComponent}
@@ -29,7 +32,7 @@ const appRoutes: Routes = [
   ],
 
   exports: [RouterModule],
-  providers: [],
+  providers: [DataService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
